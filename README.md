@@ -33,7 +33,6 @@ Run the tests in debug mode (through the "Debug Test" option in the test file's 
 Run Jest with the --inspect-brk flag:
 Bash
 node --inspect-brk node_modules/.bin/jest
-Use o código com cuidado.
 
 Access Chrome DevTools (chrome://inspect) and attach to the Node.js process.
 3. Using console.log:
