@@ -1,0 +1,28 @@
+{
+  "name": "api-tests",
+  "version": "1.0.0",
+  "description": "API Test Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.10.2",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Relatório de Testes de API",
+          "outputPath": "relatorio-api.html"
+        }
+      ]
+    ]
+  }
+}
